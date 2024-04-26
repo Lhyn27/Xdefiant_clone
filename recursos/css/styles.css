@@ -1,0 +1,13 @@
+body {
+    background-image: url(../img/1310763.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #1d1e22;
+}
