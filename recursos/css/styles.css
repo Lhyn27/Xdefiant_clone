@@ -1,4 +1,15 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
+    font-size: 1.6rem;
+    font-family:Ubisoft Sans Bold, sans-serif;
     background-image: url(../img/1310763.jpg);
     width: 100%;
     min-height: 100vh;
@@ -6,6 +17,86 @@ body {
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+}
+
+.supbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width: 100%;
+    background-color: #2a2b2f;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.suplogo {
+    position: relative;
+    height: 5rem;
+    margin-left: 9.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1.3rem;
+}
+
+.info-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}
+
+.contenedor:hover .info-content {
+    display: block;
+}
+
+.navbar li {
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar a {
+    margin: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family:"Ubisoft Sans Bold", sans-serif;
+    font-size: 2rem;
+}
+
+.navbar a:hover {
+    background-color:#ba8100;
+    border:2px solid #ba8100
+}
+
+.btn {
+    background-color: #ba8100;
+    color: #ffffff;
+    width: 21rem;
+    font-size: 2rem;
+    border: none;
+}
+
+.btn:hover{
+    background-color:#ffffff;
+    color: #ba8100;
+    border:2px solid #ffffff
+}
+
+.img-container {
+    max-width: 100%;
+    max-height: 95vh;
+    overflow: hidden;
+}
+
+main {
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
