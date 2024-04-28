@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0 auto;
 }
@@ -48,6 +49,7 @@ body {
     position: absolute;
     background-color: black;
     z-index: 1;
+    margin-top: 1rem;
 }
 
 .contenedor:hover .info-content {
@@ -59,7 +61,7 @@ body {
     justify-content: center;
 }
 
-.navbar a, span {
+.navbar a, .navbar span {
     margin: 2.5rem;
     text-decoration: none;
     color: #ffffff;
@@ -75,8 +77,10 @@ body {
     background-color: #ba8100;
     color: #ffffff;
     width: 21rem;
+    height: 100%;
     font-size: 2.22rem;
     border: none;
+    text-decoration: none;
 }
 
 .btn-rgster:hover{
@@ -103,18 +107,27 @@ body {
 
 .botones button {
     display: flex;
+    position: relative;
     flex-direction: column;
-    align-items: center;
+    top: 40rem;
     border: none;
     color: #ffffff;
     background-color: #ba8100;
     border-color: #ba8100;
-    border-radius: 3rem;
-    width: auto;
-    min-width: 10rem;
-    padding:2rem;
-    font-size: 2rem;
-    margin: 3rem;
+    border-radius: 6rem;
+    margin: 3rem auto;
+    border: .2rem solid #ba8100;
+}
+
+.rgster {
+    font-size: 3.8rem;
+    padding: 2rem 8rem;
+}
+
+.trailer {
+    font-family: Ubisoft Sans Bold, sans-serif;
+    font-size: 1.8rem;
+    padding: 2rem 4rem;
 }
 
 .botones button:hover {
@@ -130,6 +143,7 @@ main {
 .description {
     font-family: Ubisoft Sans Bold, sans-serif;
     color: #ffffff;
+    margin-top: -4rem;
 }
 
 .description h2 {
@@ -142,8 +156,13 @@ main {
 }
 
 .Factions {
+    margin-top: 15rem;
+}
+
+.Factions h2{
     color: #ffffff;
-    font-family: Ubisoft Sans Bold, sans-serif;
+    font-family: sans-serif;
+    font-size: 4rem;
 }
 
 .cards button h2 {
@@ -153,24 +172,169 @@ main {
 .cards button{
     background-color: transparent;
     border: none;
+    transition: transform 0.2s;
+}
+
+.cards button:hover {
+    transform: scale(1.1);
 }
 
 .Libertad img, .Phantoms img, .Echelon img, .Cleaners img, .DeadSec img {
-    width: 17rem;
+    width: 18rem;
     margin: 1rem;
     height: auto;
 }
 
 button h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: Ubisoft Sans, sans-serif;
     color: #ffffff;
 }
 
-.MapsNModes h2, .Loadout h2 {
+.section-title {
     font-size: 4rem;
     font-family: Ubisoft Sans, sans-serif;
     color: #ffffff;
+}
+
+.MapsNModes {
+    margin: 10rem auto;
+}
+
+.MnM-Content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MnM-Content img{
+    width: 35rem;
+}
+
+.imgs {
+    margin: 0 2.5rem;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2.7rem;
+}
+
+.texts h2 {
+    font-size: 3.3rem;
+    margin: 2rem auto auto 0;
+}
+
+.texts p{
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.Loadout {
+    background-image: url(../img/XDEF_full-bleed-promo_personalized_loadouts.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    max-width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.Loadout p{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.RBox-Container {
+    display: flex;
+    justify-content: center;
+    height: 68.4rem;
+    width: 100%;
+    margin: 10rem auto;
+}
+
+.Register-box {
+    background-color: #2a2b2f;
+    border-radius: 1rem;
+    width: 100.6rem;
+    height: 63.1rem;
+}
+
+.Register-box h2 {
+    font-size: 4rem;
+}
+
+.Register-box h2::after{
+    content: "";
+    display: block;
+    width: 70rem;
+    height: .15rem;
+    background-color: #191a1c;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+
+.Register-box h3 {
+    font-size: 3rem;
+}
+
+.Plataformas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Plataformas button{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 15rem;
+    width: 15rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    border: .5rem #ba8100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Plataformas button:hover {
+    background-color: #ba8100;
+}
+
+.PS5-LOGO {
+    width: 70%;
+    margin: 3rem 0 0 1rem;
+}
+
+.XBOX-LOGO {
+    width: 40%;
+}
+
+.UBI-LOGO {
+    width: 70%;
+    margin: 1rem 0 0 2rem;
+}
+
+.rgster2 {
+    font-family: Ubisoft Sans Bold, sans-serif;
+    font-size: 1.8rem;
+    padding: 2rem 4rem;
+    color: #ffffff;
+    background-color: #ba8100;
+    border-color: #ba8100;
+    border-radius: 6rem;
+    margin: 3rem auto;
+    border: .2rem solid #ba8100;
+}
+
+.rgster2:hover {
+    color: #ba8100;
+    background-color: #ffffff;
 }
 
 .footer1 {
@@ -179,6 +343,7 @@ button h2 {
     color: #9b9b9b;
     background-color: #000000;
     height: 5rem;
+    align-items: center;
 }
 
 .footer2 {

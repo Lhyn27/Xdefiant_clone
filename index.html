@@ -19,8 +19,8 @@
                 <li class="contenedor">
                     <span href="">INFORMACIÓN DEL JUEGO <i class="fa-solid fa-chevron-down"></i></span>
                     <ul class="info-content">
-                        <li><a href="">FACCIONES</a></li>
-                        <li><a href="">MAPAS Y MODOS</a></li>
+                        <li><a href="#Factions">FACCIONES</a></li>
+                        <li><a href="#Maps">MAPAS Y MODOS</a></li>
                     </ul>
                 </li>
                 <li>
@@ -34,14 +34,14 @@
                     </ul>
                 </li>
             </nav>
-            <button class="btn-rgster">REGÍSTRATE</button>
+            <a href="#Register"><button class="btn-rgster">REGÍSTRATE</button></a>
         </div>
         <div class="header-container">
             <img src="recursos/img/UBI_XDefiant_White-DropShadow-Logo.avif" alt="">
-        </div>
-        <div class="botones">
-            <button>REISTRATE PARA JUGAR</button>
-            <button>Ver el trailer</button>
+            <div class="botones">
+                <button class="rgster">REGÍSTRATE PARA JUGAR</button>
+                <button class="trailer">VER EL TRÁILER</button>
+            </div>
         </div>
     </header>
     <main>
@@ -54,8 +54,8 @@
                 traerán nuevas facciones<br> para jugar, además de una gran variedad de mapas,<br> armas y modos
                 de juego. Con el juego multiplataforma,<br> podrás unirte a tus amigos en todas las plataformas<br> disponibles.</p>
         </div>
-        <div class="Factions">
-            <h2>Facciones</h2>
+        <div class="Factions" id="Factions">
+            <h2 class="section-title">Facciones</h2>
             <div class="cards">
                 <button>
                     <div class="Libertad">
@@ -89,11 +89,57 @@
                 </button>
             </div>
         </div>
-        <div class="MapsNModes">
-            <h2>Mapas y Modos</h2>
+        <div class="MapsNModes" id="Maps">
+            <h2 class="section-title">Mapas y Modos</h2>
+            <div class="MnM-Content">
+                <div class="arena">
+                    <div class="imgs">
+                        <img src="recursos/img/xdef-maps_and_modes-01-arena_mode.avif" alt="">
+                    </div>
+                    <div class="texts">
+                        <h2>Modos de arena</h2>
+                        <p>Los equipos compiten en mapas estilo arena<br> en una lucha por el control
+                             del territorio en modos<br> de Dominación y Ocupación. Agregaremos más<br> 
+                             modos en el lanzamiento.</p>
+                    </div>
+                </div>
+                <div class="lineales">
+                    <div class="imgs">
+                        <img src="recursos/img/xdef-maps_and_modes-02-linear_mode.avif" alt="">
+                    </div>
+                    <div class="texts">
+                        <h2>Modos lineales</h2>
+                        <p>Los atacantes y los defensores compiten por<br> objetivos en constante cambio
+                             en Zona de<br> control y empujan una carga en el modo Escolta.</p> 
+                    </div>
+                </div>
+                <div class="mapas">
+                    <div class="imgs">
+                        <img src="recursos/img/xdef-maps_and_modes-03-maps.avif" alt="">
+                    </div>
+                    <div class="texts">
+                        <h2>Mapas</h2>
+                        <p>XDefiant ofrece ubicaciones muy diversas de los<br> mundos más populares de 
+                            Ubisoft, además de<br> mapas totalmente originales.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="Loadout">
-            <h2>Cargas personalizadas</h2>
+            <h2 class="section-title">Cargas personalizadas</h2>
+            <p>Personaliza tu carga para adecuarse a tu estilo de juego gracias a una gran variedad de <br>armas y más de 40 accesorios.</p>
+        </div>
+        <div class="RBox-Container" id="Register">
+            <div class="Register-box">
+                <h2>TE DAMOS LA BIENVENIDA A <br>LA PÁGINA DE REGISTRO DE <br>XDEFIANT</h2>
+                <h3>Elige tu plataforma:</h3>
+                <div class="Plataformas">
+                    <button><img src="recursos/img/playstation-5-logo-99C5082B4F-seeklogo.com.png" class="PS5-LOGO">PLAYSTATION 5</button>
+                    <button><img src="recursos/img/xbox-series-x-logo-689F0EAA03-seeklogo.com.png" class="XBOX-LOGO">XBOX SERIES X|S</button>
+                    <button><img src="recursos/img/ubisoft-connect-logo-1F596AAB31-seeklogo.com.png" class="UBI-LOGO">UBISOFT CONNECT <br>PC</button>
+                </div>
+                <button class="rgster2">REGISTRARSE</button>
+            </div>
         </div>
     </main>
     <footer>
